@@ -149,38 +149,53 @@ export default function Personal() {
         <div className="flex flex-col gap-6">
           {/* First row: text left, image right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-        <p className="text-base text-zinc-600 dark:text-zinc-400">
-          Lorem ipsolem dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisi nec erat.
-        </p>
-        <div className="flex justify-center md:justify-end">
-          <div className="h-24 w-24 rounded-xl bg-zinc-200 dark:bg-zinc-800" />
-        </div>
+            <p className="text-base text-zinc-600 dark:text-zinc-400">
+              Hey there! I'm Richard, an incoming newgrad, graduating from the University of California, Davis, with a Bachelor's Degree in Computer Science and Engineering.
+            </p>
+            <div className="flex justify-center md:justify-end">
+              <img
+          src="/bucd-aura-grad-throw.jpeg"
+          alt="Richard playing badminton"
+          className="h-29 w-29 rounded-xl object-cover bg-zinc-200 dark:bg-zinc-800"
+          style={{ height: '140px', width: '170px' }}
+              />
+            </div>
           </div>
           {/* Second row: image left, text right */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-        <div className="flex justify-center md:justify-start order-2 md:order-1">
-          <div className="h-16 w-16 rounded-xl bg-zinc-200 dark:bg-zinc-800" />
-        </div>
-        <p className="text-base text-zinc-600 dark:text-zinc-400 order-1 md:order-2">
-          Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est.
-        </p>
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div className="flex justify-center md:justify-start order-2 md:order-1">
+              <img
+              src="/richard-badminton2.jpg"
+              alt="Richard playing badminton"
+              className="h-29 w-29 rounded-xl object-cover bg-zinc-200 dark:bg-zinc-800"
+              style={{ height: '140px', width: '170px' }}
+              />
+            </div>
+            <p className="text-base text-zinc-600 dark:text-zinc-400 order-1 md:order-2">
+              In my free time, I enjoy playing badminton, playing/ making video games, and exploring new places with friends. I'm currently Vice President of the Badminton Club at UC Davis, as well as a member of the Davis Undergraduate Engineering Network (Formally Theta Tau).
+            </p>
+            </div>
           {/* Third row: text left, image right */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-        <p className="text-base text-zinc-600 dark:text-zinc-400">
-          Fusce euismod consequat ante. Lorem ipsolem dolor sit amet, consectetur adipiscing elit. Pellentesque sed dolor.
-        </p>
-        <div className="flex justify-center md:justify-end">
-          <div className="h-12 w-12 rounded-xl bg-zinc-200 dark:bg-zinc-800" />
-        </div>
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <p className="text-base text-zinc-600 dark:text-zinc-400">
+              I'm a Software Engineer specializing in secure full-stack application development, and robust and efficient networks. My expertise lies in building front end webpages, though I do enjoy exploring new challenges. I am currently searching for full-time positions!
+            </p>
+            <div className="flex justify-center md:justify-end">
+              <img
+              src="/bucd-boston-4s.jpeg"
+              alt="Richard at Boston"
+              className="h-29 w-29 rounded-xl object-cover bg-zinc-200 dark:bg-zinc-800"
+              style={{ height: '140px', width: '170px' }}
+              />
+            </div>
+            </div>
         </div>
       </motion.section>
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
+        <h3 className="mb-5 text-lg font-medium">Projects</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
