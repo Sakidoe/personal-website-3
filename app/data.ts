@@ -3,6 +3,7 @@ type Project = {
   description: string
   link: string
   photo?: string
+  skills?: string[]
   id: string
 }
 
@@ -12,6 +13,7 @@ type WorkExperience = {
   start: string
   end: string
   link: string
+  skills?: string[]
   id: string
 }
 
@@ -34,25 +36,44 @@ export const PROJECTS: Project[] = [
       'A Python backend script that takes .xlsx team rosters, and produces a scriptable and user-friendly match schedule. Cuts the Trimeet scheduling process from ~2 hours to 5 minutes or less.',
     link: 'https://github.com/Sakidoe/Badminton-TriMeet-Calculator',
     photo: '/BadmintonTrimeet.png',
+    skills: ['Python', 'XLSXWriter', 'Automation'],
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    photo: '/richard-prof-square.jpg',
+    name: 'Multi-Agent Bluetooth Network for Agricultural Communication',
+    description: 'Built and tested a ESP32 Bluetooth Mesh Network with the main goals of being low cost and minimal risk for bottlenecks. The network is a mixture of a Breadth First Search (BFS) and a Directed Forwarding approach, through C++, coupled with a python command system and a ReactJS Frontend.',
+    link: 'https://github.com/UCD-193AB-ws24/Multi-Agent-Communication-Network-v2',
+    photo: '/senior_design_poster.png',
+    skills: ['C++', 'ESP32', 'Bluetooth Mesh', 'Python', 'React'],
     id: 'project2',
   },
+  {
+    name: 'UCDavisBadminton.com',
+    description: 'A full-stack website built with HTML and SCSs for a smooth, animated, and user-friendly experience to be introduced to the badminton club.',
+    link: 'https://ucdavisbadminton.com/',
+    photo: '/ucdfrontpage.png',
+    skills: ['HTML', 'CSS', 'Full-stack', 'UX'],
+    id: 'project3',
+  },
+  {
+    name: 'DUENDavis.com',
+    description: 'maintained, updated, and redesigned the DUEN(Davis Undergraduate Engineering Network) TailwindCSS webpage to better reflect the organization and provide a more user-friendly experience for visitors.',
+    link: 'https://duendavis.com/',
+    photo: '/DUENFrontPage.png',
+    skills: ['TailwindCSS', 'Design', 'Maintenance'],
+    id: 'project3',
+  }
   
-]
+] 
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
+    company: 'UC Davis WAG(Windows Administration Group)',
+    title: 'Assistant Systems Administrator',
     start: '2024',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: '/blog/Workforce',
+    skills: ['Splunk', 'XLS', 'JSON', 'Tenable', 'ServiceNow'],
     id: 'work1',
   },
   {

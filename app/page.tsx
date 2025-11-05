@@ -217,6 +217,18 @@ export default function Personal() {
                   {project.name}
                   <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
                 </a>
+                  {project.skills && project.skills.length > 0 && (
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {project.skills.map((s) => (
+                        <span
+                          key={s}
+                          className="inline-flex items-center rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                        >
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 <p className="text-base text-zinc-600 dark:text-zinc-400">
                   {project.description}
                 </p>
@@ -253,6 +265,18 @@ export default function Personal() {
                     <p className="text-zinc-500 dark:text-zinc-400">
                       {job.company}
                     </p>
+                      {job.skills && job.skills.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          {job.skills.map((s) => (
+                            <span
+                              key={s}
+                              className="inline-flex items-center rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+                            >
+                              {s}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                   </div>
                   <p className="text-zinc-600 dark:text-zinc-400">
                     {job.start} - {job.end}
