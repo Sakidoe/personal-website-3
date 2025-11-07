@@ -17,6 +17,16 @@ type WorkExperience = {
   id: string
 }
 
+type Extracurriculars = {
+  company: string
+  title: string
+  start: string
+  end: string
+  link: string
+  skills?: string[]
+  id: string
+}
+
 type BlogPost = {
   title: string
   description: string
@@ -75,6 +85,34 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: '/blog/Workforce',
     skills: ['Splunk', 'XLS', 'JSON', 'Tenable', 'ServiceNow'],
     id: 'work1',
+  },
+  {
+    company: 'UC Davis Computer Lab Management',
+    title: 'Operations Support(OPS)',
+    start: '2023',
+    end: '2025',
+    link: '/blog/OPS',
+    skills: ['Linux', 'Bash Scripting', 'Computer Repair/Assembly'],
+    id: 'work2',
+  },
+  {
+    company: 'Freelance',
+    title: 'Front-end Developer',
+    start: '2017',
+    end: 'Present',
+    link: 'https://ibelick.com',
+    id: 'work3',
+  },
+]
+
+export const EXTRACURRICULARS: Extracurriculars[] = [
+  {
+    company: 'Badminton Club at UC Davis',
+    title: 'Vice President, Webmaster, Social Chair',
+    start: '2022',
+    end: 'Present',
+    link: '/blog/Badminton',
+    id: 'extra1',
   },
   {
     company: 'UC Davis Computer Lab Management',
