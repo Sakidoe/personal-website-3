@@ -1,36 +1,62 @@
-# How to Export Metadata from MDX for Next.js SEO
 
-Next.js supports exporting a `metadata` object from your MDX files, which can be used to enhance SEO and social sharing features. This is especially useful for blog posts and documentation pages.
+<Cover
+  src="/Splunk_Banner.png"
+  alt="Splunk Dashboard Banner"
+  caption="Splunk Dashboarding"
+/>
 
-## Example: Exporting Metadata
-
-You can export a `metadata` object at the top of your MDX file like this:
-
-```javascript
-export const metadata = {
-  title: 'How to Export Metadata from MDX for Next.js SEO',
-  description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-  authors: [{ name: 'Jane Doe', url: 'https://janedoe.com' }],
-  openGraph: {
-    images: [
-      'https://cdn.cosmos.so/example-image.jpg',
-    ],
-  },
-}
-```
-
-This metadata will be picked up by Next.js and can be used for SEO, Open Graph, and other meta tags.
-
-## Why Use Metadata in MDX?
-
-- **SEO**: Improve your page's search engine ranking with relevant titles and descriptions.
-- **Social Sharing**: Enhance how your content appears when shared on social media platforms.
-- **Consistency**: Keep your metadata close to your content for easier management.
-
-## Further Reading
-- [Next.js Documentation: Metadata](https://nextjs.org/docs/app/building-your-application/optimizing/metadata)
-- [MDX Documentation](https://mdxjs.com/)
+# Daily Tasks as an Assistant Student Administrator @ UC Davis
+Beginning in November of 2024, I began my position at the Windows Administration Group of UC Davis Information Education Technology. 
+With other interns, we support the System
+ Administrators with various documentation tasks, both technically and organizationally.
+ The Windows Administration Group of UC Davis has 60+ Servers that they maintain and update for their clients. Clients include the UCD Research Center,
+ International Student & Scholars(SISS), DEVAR, and more.
 
 ---
+## Splunk
+The main task of this job revolved around programming in Splunk. The WAG group imports data weekly through Sharepoint and XLS Sheets into 
+Splunk, which then can be visualized through dashboards and reports. Having taken several advanced Splunk training programs through opportunities
+on campus, I am constantly assigned the task to create Splunk Dashboards for specific clients and system admins to send to our clients.
+<Cover
+  src="/Splunk_PAM_Dashboard.jpeg"
+  alt="Splunk PAM Dashboard"
+  caption="Realtime Dashboard for PAM, a Client of UCD WAG"
+/>
+Each dashboard for a particular service is completed through Dashboard Studio, which is a new IDE created by Splunk for dashboard coding in JSON. 
+Dashboards all contain login metrics by scraping each attempt logged, and the IP of where they originate from. They also include Tenable and Logic Monitor Metrics,
+and a server list that can route to a sub-dashboard which has more particular information of individual servers.
+<Cover
+  src="/Splunk_Server_Dashboard.jpeg"
+  alt="Splunk Old Dashboard"
+  caption="WAG Server List Dashboard Created with XLS Coding"
+/>
+I've also created dashboards for WAG through the original Splunk dashboard programming(XLS code). It shows the overall health of every service that WAG oversees, and
+allows server Admins to immediately see where issues may have occurred, highlighting failed logins and Tenable updates.
 
-_This post demonstrates how to export metadata from MDX files for use with Next.js SEO features, inspired by [leerob's site](https://github.com/leerob/site/blob/main/app/n/product-engineers/page.mdx)._ 
+---
+## Sys Admin Work
+Part of my job is to learn side by side with all system admins on my team to understand the tasks which they handle, which gives me context to assist them. Each admin
+works on different services handled by WAG and their clients, which means the databases and services they aid with are all different. Most admins run services through AWS,
+while others use physical databases on campus, or even Docker. Attending routing meetings with clients and listening to how these services could be improved are ways I am 
+assigned tasks, allowing me to handle tasks that are directly effecting the products WAG produces.
+
+---
+## Tenable Security Center
+<Cover
+  src="/Tenable_Scans.png"
+  alt="Tenable Scans"
+  caption="Tenable Scans Active Scans Main Page"
+/>
+Another task that I run is running Tenable Scans, and creating tickets through the results of those scans. Vulnerabilities that are detected are then catalogged by IP, and
+if the severity of vulnerabilities exceeds a certain threshold, tickets are made through ServiceNow to immediately alert teams to view and solve the issues.
+
+---
+## ServiceNow, Sharepoint, Slack
+<Cover
+  src="/SN_Dashboard.png"
+  alt="ServiceNow Dashboard"
+  caption="ServiceNow Dashboard"
+/>
+The service I interact with the most is ServiceNow. Creating Reports of each Server and it's configuration items to send to clients by schedule, as well as creating triaging
+incidents, creating Test Restore Templates, and incident tickets to other sys admins. This, alongside editing Sharepoint Sheets and pings on Slack are how I cooperate and document
+for the team as an assistant system admin.

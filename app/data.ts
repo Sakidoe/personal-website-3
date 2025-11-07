@@ -36,15 +36,15 @@ export const PROJECTS: Project[] = [
       'A Python backend script that takes .xlsx team rosters, and produces a scriptable and user-friendly match schedule. Cuts the Trimeet scheduling process from ~2 hours to 5 minutes or less.',
     link: 'https://github.com/Sakidoe/Badminton-TriMeet-Calculator',
     photo: '/BadmintonTrimeet.png',
-    skills: ['Python', 'XLSXWriter', 'Automation'],
+    skills: ['Python', 'XLSXWriter', '.JSON', 'openpyxl'],
     id: 'project1',
   },
   {
     name: 'Multi-Agent Bluetooth Network for Agricultural Communication',
-    description: 'Built and tested a ESP32 Bluetooth Mesh Network with the main goals of being low cost and minimal risk for bottlenecks. The network is a mixture of a Breadth First Search (BFS) and a Directed Forwarding approach, through C++, coupled with a python command system and a ReactJS Frontend.',
+    description: 'Built and tested an ESP32 Bluetooth Mesh Network in C++ with a Directed Forwarding/Breadth-First Search hybrid approach, complemented by a Python command system and a ReactJS frontend, for strawberry farmers @ UC Davis.',
     link: 'https://github.com/UCD-193AB-ws24/Multi-Agent-Communication-Network-v2',
     photo: '/senior_design_poster.png',
-    skills: ['C++', 'ESP32', 'Bluetooth Mesh', 'Python', 'React'],
+    skills: ['C++', 'ESP32 Low-Energy', 'Directed Forwarding', 'Python', 'ReactJS'],
     id: 'project2',
   },
   {
@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
     description: 'A full-stack website built with HTML and SCSs for a smooth, animated, and user-friendly experience to be introduced to the badminton club.',
     link: 'https://ucdavisbadminton.com/',
     photo: '/ucdfrontpage.png',
-    skills: ['HTML', 'CSS', 'Full-stack', 'UX'],
+    skills: ['HTML', 'CSS', 'SCSS'],
     id: 'project3',
   },
   {
@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
     description: 'maintained, updated, and redesigned the DUEN(Davis Undergraduate Engineering Network) TailwindCSS webpage to better reflect the organization and provide a more user-friendly experience for visitors.',
     link: 'https://duendavis.com/',
     photo: '/DUENFrontPage.png',
-    skills: ['TailwindCSS', 'Design', 'Maintenance'],
+    skills: ['TailwindCSS', 'ReactJS'],
     id: 'project3',
   }
   
@@ -77,11 +77,12 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'UC Davis Computer Lab Management',
+    title: 'Operations Support(OPS)',
+    start: '2023',
+    end: '2025',
+    link: '/blog/OPS',
+    skills: ['Linux', 'Bash Scripting', 'Computer Repair/Assembly'],
     id: 'work2',
   },
   {
