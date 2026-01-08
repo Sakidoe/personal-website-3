@@ -80,8 +80,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'UC Davis WAG(Windows Administration Group)',
     title: 'Assistant Systems Administrator',
-    start: '2024',
-    end: 'Present',
+    start: 'Nov. 2024',
+    end: 'Dec. 2025',
     link: '/blog/Workforce',
     skills: ['Splunk', 'XLS', 'JSON', 'Tenable', 'ServiceNow'],
     id: 'work1',
@@ -89,26 +89,18 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'UC Davis Computer Lab Management',
     title: 'Operations Support(OPS)',
-    start: '2023',
-    end: '2025',
+    start: 'Jun. 2024',
+    end: 'Jun. 2025',
     link: '/blog/OPS',
     skills: ['Linux', 'Bash Scripting', 'Computer Repair/Assembly'],
     id: 'work2',
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
-  },
+  }
 ]
 
 export const EXTRACURRICULARS: Extracurriculars[] = [
   {
     company: 'Badminton Club at UC Davis',
-    title: 'Vice President, Webmaster, Social Chair',
+    title: 'Vice President, Webmaster, Travel Coordinator',
     start: '2022',
     end: 'Present',
     link: '/blog/Badminton',
