@@ -41,6 +41,24 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
+    name: 'Encourage',
+    description:
+      'A Swift iOS daily commitment tracker in SwiftUI, featuring an animated progress ring, trophy system, accessible UI and Apple Calendar integration with EventKit for the Swift Student Code Challenge 2026. ',
+    link: 'https://github.com/Sakidoe/Badminton-TriMeet-Calculator',
+    photo: '/EncourageMain.png',
+    skills: ['Swift Playground', 'Xcode', 'SwiftUI', 'EventKit'],
+    id: 'project5',
+  },
+  {
+    name: 'Taskify',
+    description:
+      'A Svelte web app that integrates Docker, OAuth, Dex, and other technologies to create a task managing calendar app, with clean animations and personal accounts. The Capstone project for Web Programming.',
+    link: 'https://github.com/Sakidoe/Taskify',
+    photo: '/TaskifyMain.png',
+    skills: ['Svelte', 'Docker', 'OAuth', 'Dex', 'Python', 'MongoDB'],
+    id: 'project6',
+  },
+  {
     name: 'Badminton Trimeet',
     description:
       'A Python backend script that takes .xlsx team rosters, and produces a scriptable and user-friendly match schedule. Cuts the Trimeet scheduling process from ~2 hours to 5 minutes or less.',
@@ -71,7 +89,7 @@ export const PROJECTS: Project[] = [
     link: 'https://duendavis.com/',
     photo: '/DUENFrontPage.png',
     skills: ['TailwindCSS', 'ReactJS'],
-    id: 'project3',
+    id: 'project4',
   }
   
 ] 
@@ -118,10 +136,16 @@ export const EXTRACURRICULARS: Extracurriculars[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Badminton @ UCD',
-    description: 'A Temporary Blog section for later!',
-    link: '/blog/Badminton',
+    title: 'Creating my first iOS App with Swift Playground: Encourage',
+    description: 'The journey of creating my very first app, and learning about Swift!',
+    link: '/blog/Encourage',
     uid: 'blog-1',
+  },
+  {
+    title: 'The story behind Taskify: an all-in-one task managing calendar application',
+    description: 'How we integrated Docker, Oauth, Dex, Python, MongoDB, and Svelte to create a smooth and user-friendly task managing app!',
+    link: '/blog/Taskify',
+    uid: 'blog-2',
   }
 ]
 
