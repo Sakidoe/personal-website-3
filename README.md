@@ -1,7 +1,6 @@
 
+# Richard Huang Personal Website! :D
 ```bash
-git clone https://github.com/ibelick/nim.git
-cd nim
 npm install
 npm run dev
 ```
